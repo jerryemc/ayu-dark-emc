@@ -1,0 +1,48 @@
+{
+  "name": "ayu-dark-emc",
+  "displayName": "Ayu Dark EMC",
+  "description": "A warm, low-glare Ayu dark theme with an OKLCH-balanced palette, ported from the ayu-dark-emc Emacs theme.",
+  "version": "0.1.1",
+  "publisher": "jerryemc",
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#121210",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "ayu",
+    "emacs",
+    "warm",
+    "oklch"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Ayu Dark EMC",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ayu-dark-emc-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "icon": "node scripts/icon.mjs",
+    "package": "npm run build && npm run check && npx --yes @vscode/vsce package --baseContentUrl https://github.com/jerryemc/ayu-dark-emc/blob/HEAD/vscode --baseImagesUrl https://github.com/jerryemc/ayu-dark-emc/raw/HEAD/vscode",
+    "publish": "npm run build && npm run check && npx --yes @vscode/vsce publish --baseContentUrl https://github.com/jerryemc/ayu-dark-emc/blob/HEAD/vscode --baseImagesUrl https://github.com/jerryemc/ayu-dark-emc/raw/HEAD/vscode"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jerryemc/ayu-dark-emc.git",
+    "directory": "vscode"
+  }
+}

@@ -1,0 +1,11 @@
+:root { --accent: #fd9d44; }
+
+body.dark > #main a:hover::after {
+  color: var(--accent);
+  margin: 0 auto 1.5rem;
+  font-family: "Maple Mono", monospace !important;
+}
+
+@media (max-width: 600px) {
+  .card { display: none; }
+}

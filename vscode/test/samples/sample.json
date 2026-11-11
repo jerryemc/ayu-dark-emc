@@ -1,0 +1,12 @@
+{
+  "name": "ayu-dark-emc",
+  "version": "0.1.0",
+  "private": true,
+  "count": 42,
+  "nothing": null,
+  "contributes": {
+    "themes": [
+      { "label": "Ayu Dark EMC", "settings": { "deep": { "deeper": 1 } } }
+    ]
+  }
+}
