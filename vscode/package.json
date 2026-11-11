@@ -2,7 +2,7 @@
   "name": "ayu-dark-emc",
   "displayName": "Ayu Dark EMC",
   "description": "A warm, low-glare Ayu dark theme with an OKLCH-balanced palette, ported from the ayu-dark-emc Emacs theme.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "jerryemc",
   "license": "MIT",
   "icon": "icon.png",
